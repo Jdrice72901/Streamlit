@@ -32,8 +32,8 @@ st.title("🧼 How Handwashing Transformed Maternal Safety in Vienna")
 
 st.markdown(
     f"""
-    **Created by:** Jake Rice, Mam Salan Njie, Tyler 
-    **Key finding:** After Semmelweis introduced handwashing in **1847**,  
+   > **Created by:** Jake Rice, Mam Salan Njie, Tyler 
+   > **Key finding:** After Semmelweis introduced handwashing in **1847**,  
     the average mortality rate fell by **{decline_pct}%**, marking one of the earliest and most powerful 
     demonstrations of infection control in medical history.
     """
@@ -150,6 +150,7 @@ st.subheader("📋 Explore Filtered Data")
 st.dataframe(filtered)
 
 st.caption("Created for DSBA Streamlit Assignment — Interactive Semmelweis Visualization")
+
 
 
 
