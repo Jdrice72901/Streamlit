@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
+import matplotlib.pyplot as plt
 
 # Load data
 df = pd.read_csv("https://raw.githubusercontent.com/jdrice72901/streamlit/main/yearly_deaths_by_clinic.csv")
@@ -148,4 +149,5 @@ st.subheader("📋 Explore Filtered Data")
 st.dataframe(filtered)
 
 st.caption("Created for DSBA Streamlit Assignment — Interactive Semmelweis Visualization")
+
 
