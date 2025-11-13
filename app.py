@@ -3,7 +3,8 @@ import pandas as pd
 import altair as alt
 
 # Load data
-df = pd.read_csv("https://raw.githubusercontent.com/<jdrice72901>/<streamlit>/main/yearly_deaths_by_clinic.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/jdrice72901/streamlit/main/yearly_deaths_by_clinic.csv")
+
 df.columns = df.columns.str.strip()
 # Calculate mortality rate
 df['mortality_rate'] = (df['Deaths'] / df['Birth']) * 100
@@ -55,3 +56,4 @@ st.write("""
 Clinic 1 had a much higher mortality rate before this intervention compared to Clinic 2.
 
 """)
+
